@@ -11,7 +11,9 @@ environments.staging = {
 	'httpPort': 5080,
 	'httpsPort': 5443,
 	'envName': 'staging',
-	'hashingSecret': 'PizzaDelivery'
+	'hashingSecret': 'PizzaDelivery',
+	'stripeSecret': 'sk_test_qApaC5ELrRFQRxhRhn4bdMsM',
+	'stripeTestToken': 'tok_visa_debit'
 };
 
 
@@ -20,7 +22,9 @@ environments.production = {
 	'httpPort': 80,
 	'httpsPort': 443,
 	'envName': 'production',
-	'hashingSecret': '1wwawqd4jx7cwskqfwgp'
+	'hashingSecret': '1wwawqd4jx7cwskqfwgp',
+	'stripeSecret': 'sk_test_qApaC5ELrRFQRxhRhn4bdMsM',
+	'stripeTestToken': 'tok_visa_debit'
 };
 
 
