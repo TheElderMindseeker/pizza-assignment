@@ -35,6 +35,15 @@ Sub-URL: `/tokens`
 * PUT. Extend the expiration period of the current token.
 * DELETE. Delete the token and thus log out user from the system.
 
+### Items
+
+Sub-URL: `/items`
+
+* POST. Create new item on menu, featuring title and price.
+* GET. Get the information about specific item.
+* PUT. Update the information about specific item.
+* DELETE. Delete chosen item from the database.
+
 ### Menu
 
 Sub-URL: `/menu`

@@ -15,7 +15,8 @@ environments.staging = {
 	'stripeSecret': 'sk_test_qApaC5ELrRFQRxhRhn4bdMsM',
 	'stripeTestToken': 'tok_visa_debit',
 	'mailgunDomainName': 'sandbox31f67f12b2754edd9d90193a3d10347b.mailgun.org',
-	'mailgunApiKey': 'b8280eb60d779204fe129bc8cea072b8-f45b080f-8eab5097'
+	'mailgunApiKey': 'b8280eb60d779204fe129bc8cea072b8-f45b080f-8eab5097',
+	'adminPasswordHash': '8f09a1d6ef2f31cab9188b8a0e9d4cbce78555c9ad484415240da0b85e2dca01'
 };
 
 
@@ -28,7 +29,8 @@ environments.production = {
 	'stripeSecret': 'sk_test_qApaC5ELrRFQRxhRhn4bdMsM',
 	'stripeTestToken': 'tok_visa_debit',
 	'mailgunDomainName': 'sandbox31f67f12b2754edd9d90193a3d10347b.mailgun.org',
-	'mailgunApiKey': 'b8280eb60d779204fe129bc8cea072b8-f45b080f-8eab5097'
+	'mailgunApiKey': 'b8280eb60d779204fe129bc8cea072b8-f45b080f-8eab5097',
+	'adminPasswordHash': '8f09a1d6ef2f31cab9188b8a0e9d4cbce78555c9ad484415240da0b85e2dca01'
 };
 
 
