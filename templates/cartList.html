@@ -1,0 +1,44 @@
+<h1>User Cart</h1>
+<h2>Your Items</h2>
+<hr />
+
+<table id="cartListTable">
+  <tr>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Amount</th>
+  </tr>
+  <tr id="emptyCartMessage">
+    <td colspan="3">There are no items in your cart yet!</td>
+  </tr>
+  <tr id="menuErrorMessage">
+    <td colspan="3">Error occured when fetching items from menu</td>
+  </tr>
+</table>
+
+<div class="ctaWrapper">
+    <a class="cta blue" href="/cart/create">Create Order</a>
+</div>
+
+<div class="formWrapper">
+  <form id="makeOrder" action="api/order" method="POST">
+    <input type="hidden" name="_method" value="POST"/>
+    <div class="formError"></div>
+    <input class="hiddenEmailAddressInput" type="hidden" name="emailAddress" />
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Make Order</button>
+    </div>
+  </form>
+</div>
+
+<div class="formWrapper">
+  <form id="deleteCart" action="/api/carts" method="DELETE">
+    <input type="hidden" name="_method" value="DELETE"/>
+    <div class="formError"></div>
+    <div class="warning">Warning: This action cannot be undone. Dont click this button on accident!</div>
+    <input class="hiddenEmailAddressInput" type="hidden" name="emailAddress" />
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta red">Empty Cart</button>
+    </div>
+  </form>
+</div>

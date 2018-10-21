@@ -1,0 +1,14 @@
+<h1>Fill up Your Cart</h1>
+<h2>We serve the most delicious pizzas!</h2>
+
+<div class="formWrapper">
+  <form id="cartCreate" action="/api/carts" method="POST">
+    <div class="formError"></div>
+    <div class="formSuccess">Your Changes Have Been Saved</div>
+    <input class="hiddenEmailAddressInput"  type="hidden" name="emailAddress" />
+    {form.fields}
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Save</button>
+    </div>
+  </form>
+</div>
