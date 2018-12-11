@@ -9,6 +9,13 @@ the app's functionality connected with emailing (see Limitations section).
 
 ## Interface
 
+### Admin CLI Interface
+
+When the server is run, the prompt will show admin CLI interface (`The CLI is
+running` will be output).  Thus, admin can use different commands to monitor
+the state of the system.  To get the list of commands and their meanings use
+`help` or `man` commands, they have absolutely same effect.
+
 ### Web Interface
 
 The application serves web content on some of its routes. To enter the web interface part of the application, proceed to `http(s)://localhost/` using the port that the server started on (see Configuration section).
@@ -24,7 +31,7 @@ HTTP methods listed below, and if a user tries to access the endpoints using oth
 For GET methods, parameters are needed to be passed using URL-encoded string after the `?` sign in URL basepath. For other
 available methods, a user needs to use the body section of the request.
 
-### Users
+#### Users
 
 Sub-URL: `/users`
 
@@ -33,7 +40,7 @@ Sub-URL: `/users`
 * PUT. Updates the information about current user.
 * DELETE. Deletes the user from the system
 
-### Tokens
+#### Tokens
 
 Sub-URL: `/tokens`
 
@@ -42,7 +49,7 @@ Sub-URL: `/tokens`
 * PUT. Extend the expiration period of the current token.
 * DELETE. Delete the token and thus log out user from the system.
 
-### Items
+#### Items
 
 Sub-URL: `/items`
 
@@ -51,13 +58,13 @@ Sub-URL: `/items`
 * PUT. Update the information about specific item.
 * DELETE. Delete chosen item from the database.
 
-### Menu
+#### Menu
 
 Sub-URL: `/menu`
 
 * GET. Get all pizzas the restaurant serves and information about them.
 
-### Shopping Cart
+#### Shopping Cart
 
 Sub-URL: `/carts`
 
@@ -66,7 +73,7 @@ Sub-URL: `/carts`
 * PUT. Update the shopping cart of the current user.
 * DELETE. Purge the shopping cart of the current user.
 
-### Ordering
+#### Ordering
 
 Sub-URL: `/order`
 

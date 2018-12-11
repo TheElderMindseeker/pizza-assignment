@@ -5,6 +5,7 @@
 
  // Dependencies
  const server = require('./lib/server');
+ const cli = require('./lib/cli');
 
 
  // Declare the app
@@ -15,6 +16,11 @@
  app.init = () => {
  	// Start the server
  	server.init();
+
+    // Start the CLI, but make sure it starts last
+    setTimeout(() => {
+        cli.init();
+    }, 50)
  };
 
 
